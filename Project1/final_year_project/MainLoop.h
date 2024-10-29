@@ -23,6 +23,7 @@ std::tuple<HHOOK, int> MouseH() {
     return std::make_tuple(mouseHooker, 0);
 }
 
+
 int MainLoop() {
     while (true) {
         if (keysPressed == keyCombo) {
@@ -44,9 +45,8 @@ int MainLoop() {
                 UnhookWindowsHookEx(mouseHooker);
                 break;
             }
-
             // Additional logic can be added here
-
+            
             break;
         }
     }
